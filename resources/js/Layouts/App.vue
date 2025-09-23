@@ -1,0 +1,23 @@
+<script setup>
+import { Head } from '@inertiajs/vue3';
+import AppHeader from '../Components/AppHeader.vue';
+import AppFooter from '../Components/AppFooter.vue';
+</script>
+
+<template>
+    <Head>
+        <meta head-key="description" name="description" content="This is inertia app" />
+    </Head>
+
+    <div class="flex min-h-screen flex-col bg-gray-50 text-gray-900">
+        <AppHeader />
+
+        <main class="flex-1">
+            <article>
+                <slot />
+            </article>
+        </main>
+
+        <AppFooter />
+    </div>
+</template>
