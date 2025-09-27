@@ -29,12 +29,16 @@ const app_name = onMounted(() => {
                 <li>
                     <Link :href="route('contact.index')" class="text-gray-700 transition-colors hover:text-blue-600">Contact Us</Link>
                 </li>
+                <li>
+                    <Link :href="route('customers.index')" class="text-gray-700 transition-colors hover:text-blue-600">Customers</Link>
+                </li>
             </ul>
 
             <div class="hidden items-center gap-3 md:flex">
                 <a href="#" class="rounded-md px-3 py-2 text-sm ring-1 ring-gray-300 hover:bg-gray-100">Docs</a>
-                <a href="#" class="rounded-md bg-blue-600 px-3 py-2 text-sm text-white hover:bg-blue-700">Get
-                    Started</a>
+                <a href="#" class="rounded-md bg-blue-600 px-3 py-2 text-sm text-white hover:bg-blue-700">
+                    Get Started
+                </a>
             </div>
         </nav>
     </header>
